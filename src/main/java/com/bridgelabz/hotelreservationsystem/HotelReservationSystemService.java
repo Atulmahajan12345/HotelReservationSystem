@@ -22,7 +22,7 @@ public class HotelReservationSystemService
 		
 		if (localStartDate.compareTo(localEndDate) <= 0 && localStartDate.compareTo(LocalDate.now()) >= 0)
 		{
-			HashMap<String,Integer> hotelPricesList = new HashMap<String, Integer>(); //making a price list to have mapping with price and hotels
+			HashMap<String,Integer> hotelPricesList = new HashMap<>(); //making a price list to have mapping with price and hotels
 			while(localStartDate.compareTo(localEndDate) <= 0)
 			{
 				for (Hotel hotel : hotelsList) 
